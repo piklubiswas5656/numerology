@@ -3,8 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Numerology/app/src/main/res/drawable/solid_shap.xml" value="0.245" />
+        <entry key="..\:/Numerology/app/src/main/res/layout-sw600dp/fragment_health_work_.xml" value="0.25" />
         <entry key="..\:/Numerology/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
+        <entry key="..\:/Numerology/app/src/main/res/layout/activity_number.xml" value="0.3333333333333333" />
+        <entry key="..\:/Numerology/app/src/main/res/layout/activity_spalsh.xml" value="0.2736212056434374" />
+        <entry key="..\:/Numerology/app/src/main/res/layout/bottom_navigation.xml" value="0.3333333333333333" />
         <entry key="..\:/Numerology/app/src/main/res/layout/drawer_header.xml" value="0.2536662703131193" />
+        <entry key="..\:/Numerology/app/src/main/res/layout/fragment_affirmation_.xml" value="0.33" />
+        <entry key="..\:/Numerology/app/src/main/res/layout/fragment_comatibility_.xml" value="0.25" />
+        <entry key="..\:/Numerology/app/src/main/res/layout/fragment_health_work_.xml" value="0.33" />
+        <entry key="..\:/Numerology/app/src/main/res/layout/fragment_my_profile_.xml" value="0.3333333333333333" />
         <entry key="..\:/Numerology/app/src/main/res/menu/drawer_student_menu.xml" value="0.3333333333333333" />
       </map>
     </option>

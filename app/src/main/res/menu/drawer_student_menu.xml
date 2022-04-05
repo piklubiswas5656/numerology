@@ -3,17 +3,25 @@
 
     <item
         android:id="@+id/navProfiles"
-        android:icon="@drawable/ic_baseline_share_24"
+        android:icon="@drawable/ic_baseline_profile"
         android:title="Profiles" />
-    <item
-        android:id="@+id/navNumber"
-        android:icon="@drawable/ic_baseline_share_24"
-        android:title="Number" />
+<!--    <item-->
+<!--        android:id="@+id/navNumber"-->
+<!--        android:icon="@drawable/newcoew"-->
+<!--        android:title="Number" />-->
 
     <item
         android:id="@+id/navCompatibility"
-        android:icon="@drawable/ic_baseline_share_24"
+        android:icon="@drawable/compatibility"
         android:title="Compatibility" />
+    <item
+        android:id="@+id/navHalth"
+        android:icon="@drawable/ic_baseline_health_and_safety_24"
+        android:title="@string/HealthWellness" />
+    <item
+       android:id="@+id/navAffirmation"
+        android:icon="@drawable/horoscope"
+        android:title="Affirmatin" />
     <item
         android:id="@+id/navShare"
         android:icon="@drawable/ic_baseline_share_24"

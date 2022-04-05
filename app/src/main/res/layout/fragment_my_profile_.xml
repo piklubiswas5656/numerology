@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Fragment.MyProfile_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--NameNUmber-->
+            <LinearLayout
+                android:id="@+id/Name_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/NameNumberText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Name Numbers"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <!--cardnumber1-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/number1"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="15dp"
+                    android:padding="50dp"
+                    card_view:cardBackgroundColor="#40ffffff"
+                    card_view:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/flower_icon" />
+
+                        <View
+                            android:id="@+id/viewexpression"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/Expression_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/viewexpression"
+                            android:text="Expression"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/Expression_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Expression_text"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@id/viewexpression"
+                            android:gravity="right"
+                            android:text="7"
+                            android:textColor="@color/white"
+                            android:textSize="40dp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--cardnumber2-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/number2"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="15dp"
+                    android:padding="50dp"
+                    card_view:cardBackgroundColor="#40ffffff"
+                    card_view:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/flower_icon" />
+
+                        <View
+                            android:id="@+id/viewPersonality"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/Personality_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/viewPersonality"
+                            android:text="Personality"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/Personality_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Personality_text"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@id/viewPersonality"
+                            android:gravity="right"
+                            android:text="3"
+                            android:textColor="@color/white"
+                            android:textSize="40dp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--cardnumber3-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/number3"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="15dp"
+                    android:padding="50dp"
+                    card_view:cardBackgroundColor="#40ffffff"
+                    card_view:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/flower_icon" />
+
+                        <View
+                            android:id="@+id/viewSoul"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/Soul_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/viewSoul"
+                            android:text="Soul"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/Soul_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Soul_text"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@id/viewSoul"
+                            android:gravity="right"
+                            android:text="4"
+                            android:textColor="@color/white"
+                            android:textSize="40dp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            <!--Birth Numbers-->
+            <LinearLayout
+                android:id="@+id/BirthNumber_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Name_LinearLayout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/BirthNumberText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Birth Numbers"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <!--cardnumber1-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/birthnumber1"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="15dp"
+                    android:padding="50dp"
+                    card_view:cardBackgroundColor="#40ffffff"
+                    card_view:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/flower_icon" />
+
+                        <View
+                            android:id="@+id/viewLifepath"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/Lifepath_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/viewLifepath"
+                            android:text="Life Path"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/Lifepath_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Lifepath_text"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@id/viewLifepath"
+                            android:gravity="right"
+                            android:text="4"
+                            android:textColor="@color/white"
+                            android:textSize="40dp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--cardnumber2-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/birtnumber2"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="15dp"
+                    android:padding="50dp"
+                    card_view:cardBackgroundColor="#40ffffff"
+                    card_view:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/flower_icon" />
+
+                        <View
+                            android:id="@+id/viewAttitude"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/Attitude_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/viewAttitude"
+                            android:text="Attitude"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/Attitude_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Attitude_text"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@id/viewAttitude"
+                            android:gravity="right"
+                            android:text="2"
+                            android:textColor="@color/white"
+                            android:textSize="40dp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--cardnumber3-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/birtnumber3"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="15dp"
+                    android:padding="50dp"
+                    card_view:cardBackgroundColor="#40ffffff"
+                    card_view:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/flower_icon" />
+
+                        <View
+                            android:id="@+id/viewBirth"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/Birth_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/viewBirth"
+                            android:text="Birth"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/Birth_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Birth_text"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@id/viewBirth"
+                            android:gravity="right"
+                            android:text="4"
+                            android:textColor="@color/white"
+                            android:textSize="40dp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

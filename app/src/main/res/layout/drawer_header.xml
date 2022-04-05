@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/header_Image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logonemaor" />
+
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="NUMEROLOGY"
+        android:textColor="@color/yello"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navProfiles"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="Profiles" />
+    <item
+        android:id="@+id/navNumber"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="Number" />
+
+    <item
+        android:id="@+id/navCompatibility"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="Compatibility" />
+    <item
+        android:id="@+id/navShare"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="Share" />
+
+
+</menu>

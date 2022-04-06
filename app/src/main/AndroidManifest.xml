@@ -11,6 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Numerology">
         <activity
+            android:name=".Register"
+            android:exported="false">
+
+        </activity>
+        <activity
             android:name=".Spalsh"
             android:exported="true">
             <intent-filter>
@@ -21,14 +26,10 @@
         </activity>
         <activity
             android:name=".Number_Activity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
     </application>
 
 </manifest>

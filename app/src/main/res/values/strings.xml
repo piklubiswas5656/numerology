@@ -5,4 +5,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="HealthWellness">Health &amp; Work</string>
+    <string name="dateofbirthselect">Please select your date of birth. Yur Life Path Attitude &amp; Birth Number will be Calculated based on Date of Birth</string>
+    <string name="enternametext">Please enter your name</string>
 </resources>

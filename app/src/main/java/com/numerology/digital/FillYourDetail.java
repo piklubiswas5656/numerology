@@ -2,91 +2,91 @@ package com.numerology.digital;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Calendar;
 
-public class Register extends AppCompatActivity {
-//    private DatePickerDialog datePickerDialog;
-//    private Button datepickerButton;
-//    private TextView dateofbirthText;
-    private Button save;
-    private EditText firstnameEditText, lastnameEditText;
-    private String dd, mm, yyyy, gender;
+public class FillYourDetail extends AppCompatActivity {
+    private DatePickerDialog datePickerDialog;
+    private Button datepickerButton;
+    private TextView dateofbirthText;
+    private Button next;
+    private String dd, mm, yyyy, gender = "Male";
+    private RadioGroup radioGroup;
+    private RadioButton radioButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_fill_your_detail);
+
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
-        dd = getIntent().getStringExtra(Constant.DAY);
-        mm = getIntent().getStringExtra(Constant.MONTH);
-        yyyy = getIntent().getStringExtra(Constant.YEAR);
-        gender = getIntent().getStringExtra(Constant.GENDER);
-//        datepickerButton = findViewById(R.id.datepicker_button);
-//        dateofbirthText = findViewById(R.id.dateofbirthTextView);
-        save = findViewById(R.id.save);
-        firstnameEditText = findViewById(R.id.firstnameEdittext);
-        lastnameEditText = findViewById(R.id.lastnameEdittext);
-//        initDatePicker();
+        radioGroup = findViewById(R.id.radioGroup);
 
-//        datepickerButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                datePickerDialog.show();
-//
-//            }
-//        });
-        save.setOnClickListener(new View.OnClickListener() {
+
+        datepickerButton = findViewById(R.id.datepicker_button);
+        dateofbirthText = findViewById(R.id.dateofbirthTextView);
+        next = findViewById(R.id.next);
+
+
+        initDatePicker();
+
+        datepickerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                if (TextUtils.isEmpty(firstnameEditText.getText()) || TextUtils.isEmpty(lastnameEditText.getText())) {
-                    Toast.makeText(getApplicationContext(), "Please Enter All Details", Toast.LENGTH_LONG).show();
+                datePickerDialog.show();
+
+            }
+        });
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (TextUtils.isEmpty(dateofbirthText.getText().toString()) || TextUtils.isEmpty(gender)) {
+                    Toast.makeText(getApplicationContext(), "Please Enter Date of Birth", Toast.LENGTH_LONG).show();
                 } else {
-
-                    SharedPreferences sp = getSharedPreferences(Constant.USER, MODE_PRIVATE);
-                    SharedPreferences.Editor editor = sp.edit();
-                    editor.putString(Constant.FIRSTNAME, firstnameEditText.getText().toString());
-                    editor.putString(Constant.LASTNAME, lastnameEditText.getText().toString());
-                    editor.putString(Constant.DAY, dd);
-                    editor.putString(Constant.MONTH, mm);
-                    editor.putString(Constant.YEAR, yyyy);
-                    editor.putString(Constant.GENDER, gender);
-                    editor.commit();
-                    editor.apply();
-                    startActivity(new Intent(Register.this, MainActivity.class));
-                    Toast.makeText(getApplicationContext(), firstnameEditText.getText().toString() + " Welcome to Numerology", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(FillYourDetail.this, Register.class);
+                    intent.putExtra(Constant.DAY, dd);
+                    intent.putExtra(Constant.MONTH, mm);
+                    intent.putExtra(Constant.YEAR, yyyy);
+                    intent.putExtra(Constant.GENDER, gender);
+                    startActivity(intent);
                     finish();
-
 
                 }
             }
         });
     }
-/*
+
     private void initDatePicker() {
         DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
                 month = month + 1;
-                String date = makeDateString(day, month, year);
+//                String date = makeDateString(day, month, year);
+//                dateofbirthText.setText(date);
+                String date = String.valueOf(day + " " + getMonthFormat(month) + " " + year);
                 dateofbirthText.setText(date);
                 dd = String.valueOf(day);
                 mm = String.valueOf(month);
@@ -102,7 +102,7 @@ public class Register extends AppCompatActivity {
         int style = AlertDialog.THEME_HOLO_LIGHT;
 
         datePickerDialog = new DatePickerDialog(this, style, dateSetListener, year, month, day);
-        //datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
+        datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
 
     }
 
@@ -140,5 +140,9 @@ public class Register extends AppCompatActivity {
         return "JAN";
     }
 
-*/
+    public void CheckButton(View view) {
+        int radioid = radioGroup.getCheckedRadioButtonId();
+        radioButton = findViewById(radioid);
+        gender = radioButton.getText().toString();
+    }
 }

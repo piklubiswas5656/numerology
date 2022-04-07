@@ -25,6 +25,7 @@ public class Spalsh extends AppCompatActivity {
         setContentView(R.layout.activity_spalsh);
         //hide actionbar
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
         /* New Handler to start the Menu-Activity
          * and close this Splash-Screen after some seconds.*/
         new Handler().postDelayed(new Runnable() {
@@ -42,6 +43,6 @@ public class Spalsh extends AppCompatActivity {
         if (sp.contains(Constant.FIRSTNAME)) {
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
         } else
-            startActivity(new Intent(getApplicationContext(), Register.class));
+            startActivity(new Intent(getApplicationContext(), FillYourDetail.class));
     }
 }

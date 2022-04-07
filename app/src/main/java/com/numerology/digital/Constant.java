@@ -9,4 +9,5 @@ public class Constant {
     public static final String FIRSTNAME = "firstname";
     public static final String LASTNAME = "lastname";
     public static final String USER="USER";
+    public static final String GENDER="Gender";
 }

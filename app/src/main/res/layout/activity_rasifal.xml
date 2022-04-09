@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".Number_Activity">
+    tools:context=".Rasifal">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/Personality_text"
+            android:id="@+id/rasifaltext"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
@@ -21,4 +22,5 @@
             android:padding="10dp"/>
 
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

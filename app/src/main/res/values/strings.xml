@@ -2,9 +2,204 @@
     <string name="app_name">Numerology</string>
     <string name="navigation_drawer_open">open</string>
     <string name="navigation_drawer_close">cloase</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="HealthWellness">Health &amp; Work</string>
     <string name="dateofbirthselect">Please select your date of birth. Yur Life Path Attitude &amp; Birth Number will be Calculated based on Date of Birth</string>
     <string name="enternametext">Please enter your name</string>
+
+    <!--rasifal-->
+    <string name="Aries">
+        All your hard work done in the past will be paid off during this year. You will get a hike in your salary with incentives. There are also bright possibilities for freshers to find a suitable job or start something of their own. Those of you who are single can get married. Some of you could be blessed with a child this year. This is a good period to attain high status in your job. Those working in the field of public life can achieve favourable results. A career change is likely in the month of May and July. Students will perform exceptionally well this year. There will be opportunities in your career to travel abroad. Some of you can get settled in a different country.
+    </string>
+    <string name="Taurus">
+        Taurus: Some of you can pursue higher education or learn any new skill this year. Those in business will have lot of gains and profits. There will be growth in career and those unemployed will get a job. A new job responsibility can be given to you. Your professional bonding will improve and you will have better coordination with your subordinates and the other team members. This is a good time to invest in property. On the family side, health of your mother needs to be supervised. Your relationship with elder siblings will improve. Students will have a favourable time as their focus and attention in studies will improve
+    </string>
+    <string name="Gemini">
+        Gemini: This year you will have new goals and desires and there will be positive changes in your professional life. You will have some sudden financial gains this year. Working professionals may get increments or opportunities to earn better after April. Entrepreneurs will be able to make better profits and expand their business which will enhance their source of earning. The year will bring luck and success in business and in any kind of partnership work. You will get help from influential people. Income from multiple sources is indicated. Those in a relationship are advised to introspect. Newly married couples will be blessed with a child.
+    </string>
+    <string name="Cancer">
+        Cancer: This year will be favourable especially for those who are into real estate or property dealing business. They will crack some good deals. Those who are planning to buy a house or make renovations in their house will get support from near and dear ones. This year is also favourable if you are planning to have some rental business or let out your property for rental income. Health of family members need to be taken care. Professionally, you may feel lost, distracted and stressed as your plans will take time to materialise. Personally, you can face misunderstandings with your partner due to the intervention of family or friends in your relationship.
+    </string>
+    <string name="Leo">
+        Leo: You will set high targets and will successfully achieve them. You will be able to resolve the problems you have been facing in the past. The month of March and April will be full of unexpected occurrences. The planetary position can give rise to some health problems, hence take good care. It can lead to a good professional relationship with your seniors and boss. This will directly impact your reputation at work and can increase the possibility of landing a promotion or increment. Between April and September, married couples will get over their marital woes and can plan to go on a trip with their spouse. Your bond with your extended family and friends will improve.
+    </string>
+    <string name="Virgo">
+        Virgo: You will enjoy abundant wealth and financial prosperity during the beginning of 2022. There may be difficulties with which you may be able to deal with confidence. There will be positive energy around you. You will get plenty of motivation and inspiration to work harder. Corporate professionals can expect a promotion. Individuals who are planning to change their industry will be successful. People who are currently unemployed will get a job in 2022. Utilise your experience in the workplace to save yourself from getting into any unexpected situation. However, things can go downhill on the health front and you are prone to suffer from minor issues relating to stomach.
+    </string>
+    <string name="Libra">
+        Libra: This year will inspire you to work harder. Changes and opportunities will be the norm this year. The time is also beneficial for freshers as they may get their dream job. This period will be good for students who are preparing for Law, Chartered accountancy and administrative jobs. Those who are employed may get good incentives and increments due to their capabilities. However, do not overexert yourself. Those who are planning to move out from their native place for studies will get good opportunities and will be able to enroll in the university of their choice. This year will also bring good gains from business. You can plan to construct your house or purchase a property.
+    </string>
+    <string name="Scorpio">Scorpio: You need to be cautious about your public image. Around April, the time is favourable for freshers searching for jobs as they will find some good proposals. The employed natives will also be able to dictate their terms at their workplace and will be in a commanding position. There are possibilities of increments and promotions. You may earn from more than one source or expansion of your business. Students can start earning from their hobbies. Your relationship with your children will improve and they will do some things which will make you feel proud. You should plan more of recreational activities. You may suffer from eye infections.
+    </string>
+    <string name="Sagittarius">
+        Sagittarius: When it comes to money or finances, you need to be prudent else there can be financial problems. You are advised not to invest money in any speculative business as you may land up into losses. You will perform better in your business and will be recognised. In the second half of the year, your domestic life will be harmonious. Students can face distractions in studies due to peer pressure. They can also face concentration issues. The time will be favourable for those who are in a romantic relationship. The intensity of love and passion in the relationship will increase. Also, singles have bright chances of getting committed in a romantic relationship.
+    </string>
+    <string name="Capricorn">
+    Capricorn: This year you may make new friends and expand your network by making influential contacts. There will be peace and happiness in the family, and an atmosphere of joy will prevail for most of the year. This time period will be beneficial for businessmen, especially those who are into family business. You will make some good profits and gains from your work. Also, there may be some sudden gain from stuck up resources. Your speech will be a bit harsh therefore be careful while talking to anyone as your rude words may hurt your near and dear ones. Healthwise, issues of self and family members may be the reason for your mental stress during this year.
+</string>
+    <string name="Aquarius">
+        Aquarius: Your savings will improve during this year. You will get support from your immediate family in all your endeavours. You will plan frequent celebrations with your friends and family to mark your success. Those who plan to expand their business will get success. Government employees will have bright chances of a transfer. There are also possibilities of a change in job for those who have been looking for one. The time is favourable for short journeys as they will bring productive results. You will have to be careful while talking to your siblings and friends as your harsh words and aggressive gesture may bring differences in your relationship.
+    </string>
+    <string name="Pisces">
+        Pisces: This year will be empowering for your personal self; you will feel more confident and stronger. You will have a charm on your face and wisdom in your words. You can face some financial trouble during this year since your expenditure will be way too high as compared to your earnings. You will be prone to injuries so be extra careful while going out. The year will be favourable for students as their energy and dynamism will help in facing competition. Your relationship with your elder siblings will improve and you may get some financial benefit or assistance from them. You will be quite optimistic throughout the year which will help you in overcoming any challenge.
+    </string>
+    <!--rasifal end-->
+
+    <!--Personality Number-->
+    <string name="one">
+        Some of their key traits are:\n\n
+
+Confidence.\n
+Loyalty.\n
+Leadership skills.\n
+Creativity.\n
+Ones need to work on:\n\n
+
+Their ego.\n
+Their lack of compassion.\n
+Being overconfident.\n
+Stubbornness.\n
+Ones are born leaders. Is that surprising at all? Probably not because they have an ego, and they’re stubborn about it.\n
+
+They’re risk-taking, self-driven pioneers who fear nothing and nobody. They’re also very creative, and a creative leader is a great one, right?\n
+
+People might not be so sure about that. Ones are so full of confidence; they scare people off. They need to calm down, approach things with less vigor and keep their ego in check. Let people who lack the confidence get close to them, as people are afraid to as ones are now.\n\n
+
+Work compassionately, lead gently and people will flock to ones.\n
+    </string>
+    <string name="two">
+        Some of their key traits are:
+
+Being trustworthy.
+Honesty.
+Reliability.
+Friendly.
+Twos need to work on:
+
+Moodiness.
+Shyness.
+Personality number 2s are the best kind of friends. They’re trustworthy so you can confide in them, and they’re honest. If you tell them something they don’t like they’ll let you know, but in a warm way that keeps the peace.
+
+Twos are natural peacemakers, but they’ll fight if they have to. They’re fiery despite their shy nature. Perhaps keeping the fight inside is what makes them so moody.
+
+Despite the moodiness, twos are talented with great ideas and are very philosophical. You may admire them for these traits, and their soft natured warmth.
+    </string>
+    <string name="three">
+        Some of their key traits are:
+
+Opportunistic nature.
+Intuition.
+Communication skills.
+Creativity.
+Threes need to work on:
+
+Manipulative streak.
+Threes are talkative and talented at it. They can attract people easily with excellent communication skills, and keep them with their creativity.
+
+It’s easy for threes to make friends, maybe because of their chatty side, maybe because of their lucky streak. Or maybe it’s because threes are intelligent and opportunistic, so they know when to pounce on a person. They’re fast at making wise decisions, which makes them successful in all aspects of life.
+
+However, threes sometimes come across as being manipulative. Even if it’s unintentional, that’s something threes need to work on.
+    </string>
+    <string name="four">
+        Some of their key traits are:
+
+Family-oriented.
+Well-dressed.
+Stability.
+Maturity.
+Nurturing nature.
+Pragmatic.
+Fours need to work on:
+
+Being too serious.
+Dull attitude.
+Fours make for the perfect gentlefolk. They’re organized, well dressed, and are very close to their family. They’re the types of well put together people that others turn to in a crisis.
+
+Personality number 4s are very mature, even from a young age. They’re pragmatic in their outlook, consistent in their actions and they dominate any scenario. But they won’t put you down if you don’t match their stable, unshakeable ways. They’re very nurturing towards others and make for excellent managers, helpers and guides.
+
+However, their pragmatic, systematic outlook in life makes them come across as boring. They’re too serious and need to learn to loosen up a little.
+    </string>
+    <string name="five">
+        Some of their key traits are:
+
+High spirited.
+Travel enthusiast.
+Adaptable.
+Fives need to work on:
+
+Over-burdening.
+Fives are a joy to know. Their spirits are so high it’s breathtaking, and they love to travel. What else would a risk-taker who loves life do, right?
+
+Personality number 5 people can handle almost any challenge, and they’ll fight zestily if anything goes awry. They’re very good at handling change and challenges, positive and negative. The positive changes they like are trends and pop culture, but the negatives could be anything.
+
+Fives only falter when they work too hard when something goes wrong. They tend to overburden themselves, whether it’s at work or being everyone’s shoulder to cry on.
+    </string>
+    <string name="six">
+        Some of their key traits are:
+
+Warmth.
+Well-balanced.
+Responsible.
+Caring.
+Sixes need to work on:
+
+Over-worrying.
+Financial frivolity.
+Vulnerability.
+Sixes are generous beings who like caring for others. They’re friendly, so they’ll be warm and loving towards anyone right away. They’re so beautiful on the inside and care more about a person’s inside than outside.
+
+However, sixes are very vulnerable when criticized and would do well to toughen up. They also tend to worry a lot, especially over money. They’re not particularly logical when it comes to their spending habits.
+    </string>
+    <string name="seven">
+        Some of their key traits are:
+
+Intelligence.
+Rationality.
+Dignified.
+Sevens need to work on:
+
+Reserved attitude.
+Unemotional nature.
+Sevens are intelligent, dignified people. Some might go as far as to call them scholars. No matter what the situation, they react with dignity and rationality.
+
+Personality number 7 people make wonderful poets, aided by their intelligence and the air of mystery about them. Their work may be quirky, as are they, and they don’t care if you find it strange.
+
+Although this confidence they have in themselves can sometimes be a downer. Sevens are used to people mocking their mysterious ways, their odd dress sense and their poetry. So they’ve adopted a reserved and “don’t-care” attitude about all aspects of life. Some people find this unappealing.
+    </string>
+    <string name="eight">
+        Some of their key traits are:
+
+Amazing judgment.
+Successful.
+Intuitive.
+Controlled.
+Eights need to work on:
+
+Show-offiness.
+Dominating people.
+Eights are great judges of character. Their intuition is powerful, so they know the types of people they should be around. Because of this and their strong, self-controlled nature, they’re very successful in life.
+
+However, their strong and controlled attitude may come across as too dominating to others, so they may shy away. They may also be disliked for showing off expensive things, like designer clothes. Eights can be very materialistic at times.
+
+Though eights are persuasive when they want their way, they are not easily swayed by others.
+    </string>
+    <string name="nine">
+        Some of their key traits are:
+
+Influential.
+Magnetic.
+Charming.
+Confidence.
+Philanthropic.
+Nines need to work on:
+
+Being aloof.
+Entitlement.
+Nines are adored by many. They’re elegant, charismatic and graceful by nature. They have a raw magnetism that draws people in.
+
+They keep people close with ease because they’re so well-versed, and their confidence is catching. But nines need to be careful because confidence can turn to cockiness in seconds.
+
+Some nines even get aloof and start acting arrogant and self-entitled, with the more positive attention they get. It’s not ideal for an influential and charming person to come across in this manner.
+    </string>
+    <!--Personality Number End-->
 </resources>

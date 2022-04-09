@@ -1,5 +1,9 @@
 package com.numerology.digital.Fragment;
 
+import static android.content.Context.MODE_PRIVATE;
+
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,7 +11,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
+import com.numerology.digital.Constant;
+import com.numerology.digital.FillYourDetail;
 import com.numerology.digital.R;
 
 /**
@@ -16,6 +24,11 @@ import com.numerology.digital.R;
  * create an instance of this fragment.
  */
 public class MyProfile_Fragment extends Fragment {
+
+    private Button newUser;
+    private TextView Personality_numberText;
+    private String Personality_number;
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -61,6 +74,18 @@ public class MyProfile_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my_profile_, container, false);
+        View view = inflater.inflate(R.layout.fragment_my_profile_, container, false);
+        newUser = view.findViewById(R.id.newUser);
+        Personality_numberText = view.findViewById(R.id.Personality_number);
+        SharedPreferences getShared = getContext().getSharedPreferences(Constant.USER, MODE_PRIVATE);
+        Personality_number = getShared.getString(Constant.NAMENUMBER, "namenumber");
+        Personality_numberText.setText(String.valueOf(Personality_number));
+        newUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), FillYourDetail.class));
+            }
+        });
+        return view;
     }
 }

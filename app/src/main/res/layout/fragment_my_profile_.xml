@@ -22,16 +22,38 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/NameNumberText"
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Name Numbers"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/NameNumberText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Name Numbers"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/newUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/black"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="New USer"
+                        android:textColor="@color/yello"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
                 <!--cardnumber1-->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/number1"
@@ -99,7 +121,7 @@
                         <ImageView
                             android:layout_width="90dp"
                             android:layout_height="match_parent"
-                            android:src="@drawable/flower_icon" />
+                            android:src="@drawable/attitude" />
 
                         <View
                             android:id="@+id/viewPersonality"
@@ -125,7 +147,7 @@
                             android:layout_marginRight="20dp"
                             android:layout_toRightOf="@id/viewPersonality"
                             android:gravity="right"
-                            android:text="3"
+                            android:text="1"
                             android:textColor="@color/white"
                             android:textSize="40dp" />
 
@@ -149,7 +171,7 @@
                         <ImageView
                             android:layout_width="90dp"
                             android:layout_height="match_parent"
-                            android:src="@drawable/flower_icon" />
+                            android:src="@drawable/soul" />
 
                         <View
                             android:id="@+id/viewSoul"
@@ -219,7 +241,7 @@
                         <ImageView
                             android:layout_width="90dp"
                             android:layout_height="match_parent"
-                            android:src="@drawable/flower_icon" />
+                            android:src="@drawable/lifepath" />
 
                         <View
                             android:id="@+id/viewLifepath"
@@ -269,7 +291,7 @@
                         <ImageView
                             android:layout_width="90dp"
                             android:layout_height="match_parent"
-                            android:src="@drawable/flower_icon" />
+                            android:src="@drawable/personolity" />
 
                         <View
                             android:id="@+id/viewAttitude"
@@ -319,7 +341,7 @@
                         <ImageView
                             android:layout_width="90dp"
                             android:layout_height="match_parent"
-                            android:src="@drawable/flower_icon" />
+                            android:src="@drawable/birth" />
 
                         <View
                             android:id="@+id/viewBirth"

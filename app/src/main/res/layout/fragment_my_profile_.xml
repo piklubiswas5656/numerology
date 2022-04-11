@@ -39,24 +39,24 @@
                         android:textSize="20dp"
                         android:textStyle="bold" />
 
-                    <Button
-                        android:id="@+id/newUser"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="140dp"
-                        android:layout_marginTop="20dp"
-                        android:background="@color/black"
-                        android:paddingStart="5dp"
-                        android:paddingEnd="5dp"
-                        android:text="New USer"
-                        android:textColor="@color/yello"
-                        android:textSize="16dp" />
+<!--                    <Button-->
+<!--                        android:id="@+id/newUser"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="140dp"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:background="@color/black"-->
+<!--                        android:paddingStart="5dp"-->
+<!--                        android:paddingEnd="5dp"-->
+<!--                        android:text="New USer"-->
+<!--                        android:textColor="@color/yello"-->
+<!--                        android:textSize="16dp" />-->
 
                 </LinearLayout>
 
-                <!--cardnumber1-->
+                <!--cardnumber1 Expression-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/number1"
+                    android:id="@+id/number1Expression"
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     android:layout_margin="15dp"
@@ -106,7 +106,7 @@
 
                 <!--cardnumber2-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/number2"
+                    android:id="@+id/number2Personality"
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     android:layout_margin="15dp"
@@ -156,7 +156,7 @@
 
                 <!--cardnumber3-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/number3"
+                    android:id="@+id/number3Soul"
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     android:layout_margin="15dp"
@@ -224,9 +224,9 @@
                     android:textColor="@color/white"
                     android:textSize="20dp"
                     android:textStyle="bold" />
-                <!--cardnumber1-->
+                <!--cardnumber4-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/birthnumber1"
+                    android:id="@+id/number4LifePath"
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     android:layout_margin="15dp"
@@ -274,9 +274,9 @@
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!--cardnumber2-->
+                <!--cardnumber5-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/birtnumber2"
+                    android:id="@+id/number5Attitude"
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     android:layout_margin="15dp"
@@ -324,9 +324,9 @@
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!--cardnumber3-->
+                <!--cardnumber6-->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/birtnumber3"
+                    android:id="@+id/number6Birth"
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     android:layout_margin="15dp"

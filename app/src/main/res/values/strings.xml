@@ -202,4 +202,52 @@ They keep people close with ease because they’re so well-versed, and their con
 Some nines even get aloof and start acting arrogant and self-entitled, with the more positive attention they get. It’s not ideal for an influential and charming person to come across in this manner.
     </string>
     <!--Personality Number End-->
+
+    <!--alltext-->
+    <string name="Expressionwhatistitle">
+        What is Expression Number
+    </string>
+    <string name="ExpresionWhatisdes">
+         The name is the first identity we all get. When we introduce ourselves, name is the first thing we tell other person. Name determines whether anyones life is peaceful, successful or not. It indicates that the type of people anybody attracts and the quality of person associate with them. It also indicates the nature of the experience they face, the kind of life they spend and opportunity and threats comes in their life.
+  From the moment, parents gives the name to their child, the letters of his/her full name start working and impacting the childs life in the given sequence. Each letter is active for the number of years as per the value assigned to those letters. The letters of First Name, Middle Name, and Last name work simultaneously creating a unique pattern of events in an individuals life.
+    </string>
+
+    <string name="ExpresionHowtotitle">How to Calculate</string>
+    <string name="ExpresionHowtodes"> Simply put, numerology is the study of the mystical relationship between our life and numbers. It is based on the numerical calculation of letters in names, with each letter having a corresponding number. These numbers can be used to evaluate your personality, life and even predict your future. The most popular numerology method in the western world is developed by Pythagoras, the famous Greek mathematician and philosopher, who believed that the universe is governed and explained by numbers. In the Pythagorean system, numbers were assigned to each letter in the alphabet. In name numerology, all numbers are reduced to the single digits 1. through 9 except the special master numbers 11 and 22. The numbers are reduced by simple addition.
+</string>
+
+
+    <string name="PersonalityWhatistitle">
+           What is Personality Number
+    </string>
+    <string name="PersonalityWhatisdes">Personality number shows the way other people see you at first, the essence of your image. This number provides information on who you want to seem, the level of your confidence in communicating with others, how far can you go in your relationships and how open you are. Personality Number is one of the Core Numbers in Numerology. According to numerology, a personality number is a single-digit number that is derived from the consonants of your name.
+
+ Personality number is a very important aspect that defines your characteristics, traits, qualities, and vibrations that you send in the world. It distinguishes what kind of people you will like, what facts you wil| accept and what things you will allow into your heart and mind. Personality number can reveal a lot of hidden traits about you.</string>
+    <string name="PersonalityHowtotitle"> How to Calculate </string>
+    <string name="PersonalityHowtodes">Personality number is developed by analyzing the consonants from your full name given to you at birth. In order to find this number add all the numbers assigned to the consonants from your full name (first name, last name, middle one if present), and reduce the result to the one-digit number.</string>
+
+
+    <string name="SoulUrgeWhatistitle">What is Soul Urge Number </string>
+    <string name="SoulUrgeWhatisdes">Soul Urge number is also known as Heart Desire Number. Soul
+        number reveals your core desires and destiny. It define the general intention behind many of your actions, and dramatically influences the choices you make in life.The Soul Urge Number is also significant as it gives us more awareness about the reasons why we are drawn to specific things and why we do certain things. Soul Urge number gives you insight about your spiritual self (your soul). It tells you what you truly value, what your ethics are, what you desire at a deep, soul level, and how that inspires you along in this lifetime.</string>
+    <string name="SoulUrgeHowtotitle">How to Calculate </string>
+    <string name="SoulUrgeHowtodes">Soul urge number is derived from the vowels in your full name given to you at the birth. In order to find this number add all the numbers assigned to the vowels from your full name (first name, last name, middle one if present), and reduce the result to the one-digit number.</string>
+
+
+    <string name="LifePathWhatistitle">What is Life Path Number
+</string>
+    <string name="LifePathWhatisdes">Numerology is the belief in the divine or mystical relationship between a number and events. The most important and influential number in your personal Numerology is your Life Path number. This number represents who you are at your core. It tell you what traits or skills you posses, and what major life challenges you may see along the way. Life Path number in Numerology is like the Sun sign in Astrology: It tells you like how you act and react, and how you process life. But do not think of it as a simple list of traits that are meant to tell you exactly who you are. While each Life Path carries a unique set of both positive and negative traits, how they manifest is up to you.
+The life path number is a calculation that helps to predict the challenges in life, your current life status, future events and the purpose of your existence. The simple equation can show the life path number for anyone and exhibit your deepest values and personality as an individual.The life path numbers are only in single digits 1 to 9. Within these numbers all the prediction takes place. In the overall study of numerology, the life path number is most important. It will showcase the series of events, challenges, opportunities that you are about to spectate in your future life.</string>
+    <string name="LifePathHowtotitle">How to Calculate </string>
+    <string name="LifePathHowtodes">Life Path Number is calculated from your FULL Date of Birth, and is considered one of the most important and influential numbers within your entire Numerology Chart. In order to find your Life Path number, simply take your birthdate and reduce it down to its numerical value. For example, if you were born on July 5, 1989, youd first identify the separate values of the day, month, and year: July is the seventh month, so its number is seven. Your day of birth is, obviously, five. Finally, your birth year can be reduced down to a single number by adding its digits together (1+9+8+9 = 27) and then adding that sums digits together (2+7 = 9). So, you now have three numbers you need to add together (7+5+9 = 22) and yet another sum to reduce (2+2 = 4).</string>
+
+    <string name="AttitudeWhatistitle">What is Attitude Number</string>
+    <string name="AttitudeWhatisdes">The attitude number, also known as the sun and achievement number. Attitude Number describes how we are perceived by others when they first meet us. It is an indication of what type of first impression, or appearance, we portray to the world. The ways you act and react to the different circumstances in your personal, professional and social life characterizes your attitude towards life. Your way of thinking, your consideration for others attitudes, instincts and some basic personality traits also give a clear impression of your attitude.</string>
+    <string name="AttitudeHowtotitle">How to Calculate </string>
+    <string name="AttitudeHowtodes">In order to calculate attitude number need to add Birth Day and Birth Month together, and reducing that number down to a single digit number. Achievement/Attitude number reveals a lot about anyone innate abilities to have success in what they choose to do.</string>
+
+    <string name="BirthWhatistitle">What is Birth Number </string>
+    <string name="BirthWhatisdes">Birthday number is one of most important number in Numerology core numbers. This is derived from your birth date and the number that influence you most strongly throughout your life. As one of these important numbers, your Birthday number can reveal unique and powerful abilities that you naturally possess you have to offer the world. The day on which you were born is marked by certain properties.. It is the code of fate that will prepare you for a collision with the turns of fate that can cause damage to everything that seemed to be the guarantors of a successful future. The number of your birthday can be either one or two digits. Each figure has its own characteristics. </string>
+    <string name="BirthHowtotitle">How to Calculate </string>
+    <string name="BirthHowtodes">According to Numerology, your birth number says a lot about your personality and characteristics.Add the numbers in your date of birth, the result you get is your Birth Number. For example, if the date of birth of an individual is 2nd March 1989, the birth number would be 2, because the person is born on 2nd of March, i.e. 2nd day in the month of March. If a persons birth date is in two digits, i.e. 17th, then their birth number will be 1+7=8.</string>
 </resources>

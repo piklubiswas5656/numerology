@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -14,8 +15,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.numerology.digital.Alltext;
 import com.numerology.digital.Constant;
 import com.numerology.digital.FillYourDetail;
+import com.numerology.digital.MainActivity;
 import com.numerology.digital.R;
 
 /**
@@ -25,9 +28,10 @@ import com.numerology.digital.R;
  */
 public class MyProfile_Fragment extends Fragment {
 
-    private Button newUser;
+    //    private Button newUser;
     private TextView Personality_numberText;
     private String Personality_number;
+    private CardView Expression, Personality, Soul, LifePath,Attitude,Birth;
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -75,17 +79,86 @@ public class MyProfile_Fragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_my_profile_, container, false);
-        newUser = view.findViewById(R.id.newUser);
+//        newUser = view.findViewById(R.id.newUser);
         Personality_numberText = view.findViewById(R.id.Personality_number);
+        Expression = view.findViewById(R.id.number1Expression);
+        Personality = view.findViewById(R.id.number2Personality);
+        Soul = view.findViewById(R.id.number3Soul);
+        LifePath = view.findViewById(R.id.number4LifePath);
+        Attitude=view.findViewById(R.id.number5Attitude);
+        Birth=view.findViewById(R.id.number6Birth);
+
+
+
         SharedPreferences getShared = getContext().getSharedPreferences(Constant.USER, MODE_PRIVATE);
         Personality_number = getShared.getString(Constant.NAMENUMBER, "namenumber");
         Personality_numberText.setText(String.valueOf(Personality_number));
-        newUser.setOnClickListener(new View.OnClickListener() {
+
+
+        onclick();
+        return view;
+    }
+
+    private void onclick() {
+        Expression.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), FillYourDetail.class));
+                Intent intent = new Intent(getContext(), Alltext.class);
+                intent.putExtra(Constant.ALLTEXTREADING, "Expression");
+                intent.putExtra(Constant.NUMBERPASS, String.valueOf(Personality_number));
+                startActivity(intent);
+
             }
         });
-        return view;
+        Personality.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), Alltext.class);
+                intent.putExtra(Constant.ALLTEXTREADING, "Personality");
+                intent.putExtra(Constant.NUMBERPASS, String.valueOf(Personality_number));
+                startActivity(intent);
+
+            }
+        });
+        Soul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), Alltext.class);
+                intent.putExtra(Constant.ALLTEXTREADING, "Soul");
+                intent.putExtra(Constant.NUMBERPASS, String.valueOf(Personality_number));
+                startActivity(intent);
+
+            }
+        });
+        LifePath.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), Alltext.class);
+                intent.putExtra(Constant.ALLTEXTREADING, "LifePath");
+                intent.putExtra(Constant.NUMBERPASS, String.valueOf(Personality_number));
+                startActivity(intent);
+
+            }
+        });
+        Attitude.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), Alltext.class);
+                intent.putExtra(Constant.ALLTEXTREADING, "Attitude");
+                intent.putExtra(Constant.NUMBERPASS, String.valueOf(Personality_number));
+                startActivity(intent);
+
+            }
+        });
+        Birth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), Alltext.class);
+                intent.putExtra(Constant.ALLTEXTREADING, "Birth");
+                intent.putExtra(Constant.NUMBERPASS, String.valueOf(Personality_number));
+                startActivity(intent);
+
+            }
+        });
     }
 }

@@ -3,7 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/newUser"
-        android:icon="@drawable/flower_icon"
-        android:title="Compatibility"
-        app:showAsAction="always"/>
+        android:icon="@drawable/ic_baseline_person_add_24"
+        android:title="Add User"
+        app:showAsAction="always"
+
+      />
+
 </menu>

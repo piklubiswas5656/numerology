@@ -11,7 +11,11 @@ import androidx.fragment.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -127,8 +131,7 @@ public class MainActivity extends AppCompatActivity {
                 finaldigit = temp;
             }
 
-        }
-        else {
+        } else {
             finaldigit = tempint;
 
         }
@@ -223,9 +226,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-
     //for digit split
     private static void collectDigits(int num, List<Integer> digits) {
         if (num / 10 > 0) {
@@ -308,6 +308,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.newUser:
+                startActivity(new Intent(getApplicationContext(), FillYourDetail.class));
+                return true;
+        }
         if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
@@ -331,4 +336,18 @@ public class MainActivity extends AppCompatActivity {
     }
 */
 
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.newuser_menu, menu);
+
+        for (int i = 0; i < menu.size(); i++) {
+            MenuItem menuItem = menu.getItem(i);
+            SpannableString spannable = new SpannableString(
+                    menu.getItem(i).getTitle().toString());
+            spannable.setSpan(new ForegroundColorSpan(Color.YELLOW), 0, spannable.length(), 0);
+            menuItem.setTitle(spannable);
+        }
+        return true;
+    }
 }

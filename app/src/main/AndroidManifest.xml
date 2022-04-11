@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Numerology">
         <activity
+            android:name=".Alltext"
+            android:exported="false" />
+        <activity
             android:name=".Rasifal"
             android:exported="false" />
         <activity

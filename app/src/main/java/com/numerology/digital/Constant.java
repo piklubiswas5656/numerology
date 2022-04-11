@@ -23,4 +23,8 @@ public class Constant {
     public static final String SEVEN="seven";
     public static final String EIGHT="eight";
     public static final String NINE="nine";
+
+    public static final String ALLTEXTREADING="AllText";
+    public static final String NUMBERPASS="NumberPass";
+
 }

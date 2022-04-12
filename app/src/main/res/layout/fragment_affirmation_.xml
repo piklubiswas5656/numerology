@@ -37,12 +37,35 @@
                 android:textSize="20dp" />
 
         </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Affirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:onClick="Affirmation"
+            android:layout_below="@+id/liner1"
+            android:gravity="center">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/yello"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:text="Affirmation"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </LinearLayout>
         <GridLayout
             android:id="@+id/grid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/liner1"
+            android:layout_below="@id/Affirmation"
             android:layout_margin="15dp"
             android:alignmentMode="alignMargins"
             android:columnCount="3"
@@ -470,6 +493,7 @@
                     android:textSize="15dp" />
             </LinearLayout>
         </GridLayout>
+
 
     </RelativeLayout>
 </ScrollView>

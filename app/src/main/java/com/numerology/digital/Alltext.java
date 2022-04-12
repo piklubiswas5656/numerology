@@ -23,6 +23,7 @@ public class Alltext extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alltext);
+        getSupportActionBar().hide();
         intil();
         onclick();
         getname = getIntent().getStringExtra(Constant.ALLTEXTREADING);

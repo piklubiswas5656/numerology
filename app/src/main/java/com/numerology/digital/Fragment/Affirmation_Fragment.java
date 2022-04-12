@@ -14,10 +14,11 @@ import android.widget.TextView;
 import com.numerology.digital.Constant;
 import com.numerology.digital.R;
 import com.numerology.digital.Rasifal;
+import com.numerology.digital.Scratch;
 
 
 public class Affirmation_Fragment extends Fragment {
-    private LinearLayout Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces;
+    private LinearLayout Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces, Affirmation;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -68,6 +69,7 @@ public class Affirmation_Fragment extends Fragment {
         Capricorn = view.findViewById(R.id.Capricorn);
         Aquarius = view.findViewById(R.id.Aquarius);
         Pisces = view.findViewById(R.id.Pisces);
+        Affirmation = view.findViewById(R.id.Affirmation);
         onclick();
         return view;
     }
@@ -121,7 +123,7 @@ public class Affirmation_Fragment extends Fragment {
                 startActivity(intent);
             }
         });
-       Libra.setOnClickListener(new View.OnClickListener() {
+        Libra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), Rasifal.class);
@@ -137,7 +139,7 @@ public class Affirmation_Fragment extends Fragment {
                 startActivity(intent);
             }
         });
-       Sagittarius.setOnClickListener(new View.OnClickListener() {
+        Sagittarius.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), Rasifal.class);
@@ -167,6 +169,12 @@ public class Affirmation_Fragment extends Fragment {
                 Intent intent = new Intent(getContext(), Rasifal.class);
                 intent.putExtra(Constant.RASIFALTEXT, "Pisces");
                 startActivity(intent);
+            }
+        });
+        Affirmation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), Scratch.class));
             }
         });
     }

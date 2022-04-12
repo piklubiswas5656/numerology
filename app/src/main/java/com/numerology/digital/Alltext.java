@@ -16,7 +16,8 @@ public class Alltext extends AppCompatActivity {
     private LinearLayout redingliner2, whatisliner2, howtoliner2;
     private CardView readingCardview, whatiscardview, howtoCardView;
     private String getname;
-    private TextView redaingtext, redingdes;
+    private TextView redaingtext, redingdes, whatistext, whatisdes;
+    private TextView howtodes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,32 @@ public class Alltext extends AppCompatActivity {
         onclick();
         getname = getIntent().getStringExtra(Constant.ALLTEXTREADING);
 
+        if (getname.equals("Expression")) {
+            whatistext.setText(R.string.Expressionwhatistitle);
+            whatisdes.setText(R.string.ExpresionWhatisdes);
+            howtodes.setText(R.string.ExpresionHowtodes);
+
+        } else if (getname.equals("Personality")) {
+            whatistext.setText(R.string.PersonalityWhatistitle);
+            whatisdes.setText(R.string.PersonalityWhatisdes);
+            howtodes.setText(R.string.PersonalityHowtodes);
+        } else if (getname.equals("Soul")) {
+            whatistext.setText(R.string.SoulUrgeWhatistitle);
+            whatisdes.setText(R.string.SoulUrgeWhatisdes);
+            howtodes.setText(R.string.SoulUrgeHowtodes);
+        } else if (getname.equals("LifePath")) {
+            whatistext.setText(R.string.LifePathWhatistitle);
+            whatisdes.setText(R.string.LifePathWhatisdes);
+            howtodes.setText(R.string.LifePathHowtodes);
+        } else if (getname.equals("Attitude")) {
+            whatistext.setText(R.string.AttitudeWhatistitle);
+            whatisdes.setText(R.string.AttitudeWhatisdes);
+            howtodes.setText(R.string.AttitudeHowtodes);
+        } else if (getname.equals("Birth")) {
+            whatistext.setText(R.string.BirthWhatistitle);
+            whatisdes.setText(R.string.BirthWhatisdes);
+            howtodes.setText(R.string.BirthHowtodes);
+        }
 
 
     }
@@ -44,6 +71,9 @@ public class Alltext extends AppCompatActivity {
         howtoImage = findViewById(R.id.HowToImage);
         redaingtext = findViewById(R.id.ReadingText);
         redingdes = findViewById(R.id.ReadingfullText);
+        whatistext = findViewById(R.id.WhatisText);
+        whatisdes = findViewById(R.id.WhatIsfullText);
+        howtodes = findViewById(R.id.HowTofullText);
     }
 
     private void onclick() {

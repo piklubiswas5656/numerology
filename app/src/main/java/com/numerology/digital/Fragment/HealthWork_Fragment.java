@@ -1,13 +1,17 @@
 package com.numerology.digital.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.numerology.digital.Alltext;
+import com.numerology.digital.Constant;
 import com.numerology.digital.R;
 
 /**
@@ -16,6 +20,8 @@ import com.numerology.digital.R;
  * create an instance of this fragment.
  */
 public class HealthWork_Fragment extends Fragment {
+    private CardView Behaviour;
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -61,6 +67,17 @@ public class HealthWork_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_health_work_, container, false);
+       View view=inflater.inflate(R.layout.fragment_health_work_, container, false);
+        Behaviour=view.findViewById(R.id.Behaviour);
+        Behaviour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), Alltext.class);
+                intent.putExtra(Constant.ALLTEXTREADING, "Behaviour");
+                startActivity(intent);
+            }
+        });
+
+       return view;
     }
 }

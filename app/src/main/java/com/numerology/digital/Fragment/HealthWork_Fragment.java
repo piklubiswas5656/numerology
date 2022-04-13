@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 
 import com.numerology.digital.Alltext;
 import com.numerology.digital.Constant;
+import com.numerology.digital.HealthWork;
+import com.numerology.digital.Number_Activity;
 import com.numerology.digital.R;
 
 /**
@@ -20,7 +22,7 @@ import com.numerology.digital.R;
  * create an instance of this fragment.
  */
 public class HealthWork_Fragment extends Fragment {
-    private CardView Behaviour;
+    private CardView Behaviour, Career, Health, Money;
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -67,17 +69,47 @@ public class HealthWork_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-       View view=inflater.inflate(R.layout.fragment_health_work_, container, false);
-        Behaviour=view.findViewById(R.id.Behaviour);
+        View view = inflater.inflate(R.layout.fragment_health_work_, container, false);
+        Behaviour = view.findViewById(R.id.Behaviour);
+        Career = view.findViewById(R.id.Career);
+        Health = view.findViewById(R.id.HealthandWellness);
+        Money = view.findViewById(R.id.Money);
         Behaviour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getContext(), Alltext.class);
+                Intent intent = new Intent(getContext(), HealthWork.class);
                 intent.putExtra(Constant.ALLTEXTREADING, "Behaviour");
                 startActivity(intent);
             }
         });
+        Career.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), HealthWork.class);
+                intent.putExtra(Constant.ALLTEXTREADING, "Career");
+                startActivity(intent);
+            }
+        });
+        Health.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), HealthWork.class);
+                intent.putExtra(Constant.ALLTEXTREADING, "Health");
+                startActivity(intent);
+            }
+        });
+        Money.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), HealthWork.class);
+                intent.putExtra(Constant.ALLTEXTREADING, "Money");
+                startActivity(intent);
+            }
+        });
 
-       return view;
+        return view;
     }
+
+
+
 }

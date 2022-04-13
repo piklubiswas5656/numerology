@@ -17,7 +17,7 @@ public class Alltext extends AppCompatActivity {
     private CardView readingCardview, whatiscardview, howtoCardView;
     private String getname;
     private TextView redaingtext, redingdes, whatistext, whatisdes;
-    private TextView howtodes;
+    private TextView howtodes, toolbartext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,37 +28,48 @@ public class Alltext extends AppCompatActivity {
         onclick();
         getname = getIntent().getStringExtra(Constant.ALLTEXTREADING);
 
+
+        condi();
+
+    }
+
+    private void condi() {
         if (getname.equals("Expression")) {
             whatistext.setText(R.string.Expressionwhatistitle);
             whatisdes.setText(R.string.ExpresionWhatisdes);
             howtodes.setText(R.string.ExpresionHowtodes);
+            toolbartext.setText("Expression");
 
         } else if (getname.equals("Personality")) {
             whatistext.setText(R.string.PersonalityWhatistitle);
             whatisdes.setText(R.string.PersonalityWhatisdes);
             howtodes.setText(R.string.PersonalityHowtodes);
+            toolbartext.setText("Personality");
         } else if (getname.equals("Soul")) {
             whatistext.setText(R.string.SoulUrgeWhatistitle);
             whatisdes.setText(R.string.SoulUrgeWhatisdes);
             howtodes.setText(R.string.SoulUrgeHowtodes);
+            toolbartext.setText("Soul");
         } else if (getname.equals("LifePath")) {
             whatistext.setText(R.string.LifePathWhatistitle);
             whatisdes.setText(R.string.LifePathWhatisdes);
             howtodes.setText(R.string.LifePathHowtodes);
+            toolbartext.setText("LifePath");
         } else if (getname.equals("Attitude")) {
             whatistext.setText(R.string.AttitudeWhatistitle);
             whatisdes.setText(R.string.AttitudeWhatisdes);
             howtodes.setText(R.string.AttitudeHowtodes);
+            toolbartext.setText("Attitudeh");
         } else if (getname.equals("Birth")) {
             whatistext.setText(R.string.BirthWhatistitle);
             whatisdes.setText(R.string.BirthWhatisdes);
             howtodes.setText(R.string.BirthHowtodes);
+            toolbartext.setText("Birth");
         }
-
-
     }
 
     private void intil() {
+        toolbartext = findViewById(R.id.toolbartext);
         backbutton = findViewById(R.id.btnCloseResultLayout);
         backbutton.setOnClickListener(v -> onBackPressed());
         redingImage = findViewById(R.id.ReadingImage);

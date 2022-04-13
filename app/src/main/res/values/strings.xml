@@ -250,4 +250,13 @@ The life path number is a calculation that helps to predict the challenges in li
     <string name="BirthWhatisdes">Birthday number is one of most important number in Numerology core numbers. This is derived from your birth date and the number that influence you most strongly throughout your life. As one of these important numbers, your Birthday number can reveal unique and powerful abilities that you naturally possess you have to offer the world. The day on which you were born is marked by certain properties.. It is the code of fate that will prepare you for a collision with the turns of fate that can cause damage to everything that seemed to be the guarantors of a successful future. The number of your birthday can be either one or two digits. Each figure has its own characteristics. </string>
     <string name="BirthHowtotitle">How to Calculate </string>
     <string name="BirthHowtodes">According to Numerology, your birth number says a lot about your personality and characteristics.Add the numbers in your date of birth, the result you get is your Birth Number. For example, if the date of birth of an individual is 2nd March 1989, the birth number would be 2, because the person is born on 2nd of March, i.e. 2nd day in the month of March. If a persons birth date is in two digits, i.e. 17th, then their birth number will be 1+7=8.</string>
+
+
+    <!--Halth and Work-->
+    <!--title-->
+    <string name="behaviourtitle">Behaviour Reading</string>
+    <string name="careertitle">Career Readeing</string>
+    <string name="healthtitle">Health Reading</string>
+    <string name="moneytitle">Money Reading</string>
+
 </resources>

@@ -11,10 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Numerology">
         <activity
+            android:name=".HealthWork"
+            android:exported="false" />
+        <activity
             android:name=".Scratch"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".Alltext"
             android:exported="false" />

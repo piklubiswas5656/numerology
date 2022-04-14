@@ -12,6 +12,7 @@ public class Constant {
     public static final String GENDER = "Gender";
     public static final String RASIFALTEXT = "RasifalText";
     public static final String  NAMENUMBER="NameNumber";
+    public static final String EXPRESSIONNUMBER="ExpressionNumber";
 
     public static final String PERSONALITYNUMBER="PersonalityNumber";
     public static final String ONE="one";

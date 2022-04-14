@@ -85,7 +85,7 @@ public class Comatibility_Fragment extends Fragment {
         button9 = view.findViewById(R.id.button9);
         SharedPreferences getShared = getContext().getSharedPreferences(Constant.USER, MODE_PRIVATE);
         getShared.getString(Constant.NAMENUMBER, "namenumber");
-        Lifepath_number_Text.setText("Your Life Path Number is " + getShared.getString(Constant.NAMENUMBER, "namenumber"));
+        Lifepath_number_Text.setText("Your Life Path Number is " + getShared.getString(Constant.NAMENUMBER, "nodatefound"));
         onclick();
 
 

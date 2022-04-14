@@ -39,36 +39,43 @@ public class Alltext extends AppCompatActivity {
             whatisdes.setText(R.string.ExpresionWhatisdes);
             howtodes.setText(R.string.ExpresionHowtodes);
             toolbartext.setText("Expression");
+            redaingtext.setText(R.string.ExpressionReadingtitle);
 
         } else if (getname.equals("Personality")) {
             whatistext.setText(R.string.PersonalityWhatistitle);
             whatisdes.setText(R.string.PersonalityWhatisdes);
             howtodes.setText(R.string.PersonalityHowtodes);
             toolbartext.setText("Personality");
+            redaingtext.setText(R.string.PersonalityReadingtitle);
         } else if (getname.equals("Soul")) {
             whatistext.setText(R.string.SoulUrgeWhatistitle);
             whatisdes.setText(R.string.SoulUrgeWhatisdes);
             howtodes.setText(R.string.SoulUrgeHowtodes);
             toolbartext.setText("Soul");
+            redaingtext.setText(R.string.sourreadingtitle);
         } else if (getname.equals("LifePath")) {
             whatistext.setText(R.string.LifePathWhatistitle);
             whatisdes.setText(R.string.LifePathWhatisdes);
             howtodes.setText(R.string.LifePathHowtodes);
             toolbartext.setText("LifePath");
+            redaingtext.setText(R.string.Lifepathreadingtitle);
         } else if (getname.equals("Attitude")) {
             whatistext.setText(R.string.AttitudeWhatistitle);
             whatisdes.setText(R.string.AttitudeWhatisdes);
             howtodes.setText(R.string.AttitudeHowtodes);
             toolbartext.setText("Attitudeh");
+            redaingtext.setText(R.string.Attituderedingtiel);
         } else if (getname.equals("Birth")) {
             whatistext.setText(R.string.BirthWhatistitle);
             whatisdes.setText(R.string.BirthWhatisdes);
             howtodes.setText(R.string.BirthHowtodes);
             toolbartext.setText("Birth");
+            redaingtext.setText(R.string.Birthreadingtitle);
         }
     }
 
     private void intil() {
+
         toolbartext = findViewById(R.id.toolbartext);
         backbutton = findViewById(R.id.btnCloseResultLayout);
         backbutton.setOnClickListener(v -> onBackPressed());

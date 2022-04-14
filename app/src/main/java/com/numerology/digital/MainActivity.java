@@ -45,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
     private TextView BottomBtnoneText, BottomBtntwoText, BottomBtntreeText, BottomBtnfourText;
 
     private String firstname, lastname;
-    private int tempint;
-    private int temp, temptwo, temptree;
+    private int tempint, expressiontempint;
+    private int temp, temptwo, temptree, expressiontemp, expressiontemptwo, expressiontemptree;
 
     String name;
-    private int digitvalue;
-    private int finaldigit;
+    private int digitvalue, expressiondigitvalue;
+    private int finaldigit, expressionfinaldigit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +75,37 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
+        Personalitynumber();
+        Expressionnumber();
+        //bottomnavigation text
+        BottomBtnoneText = findViewById(R.id.BottomBtnoneText);
+        BottomBtntwoText = findViewById(R.id.BottomBtntwoText);
+        BottomBtntreeText = findViewById(R.id.BottomBtnthreeText);
+        BottomBtnfourText = findViewById(R.id.BottomBtnfourText);
+
+        //bottomnavigation text end
+
+
+        main = findViewById(R.id.liner_main);
+
+        //navigation
+        drawerLayout = findViewById(R.id.layoutParent);
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout,
+                R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(actionBarDrawerToggle);
+        actionBarDrawerToggle.syncState();
+        navigationView = findViewById(R.id.navigationDrawer);
+        navigationView.setCheckedItem(R.id.navProfiles);
+        //navigation end
+        bottomnavmyprfile = findViewById(R.id.bottomnavmyprfile);
+        bottomnavCompatibility = findViewById(R.id.bottomnavCompatibility);
+        bottomnavHealthandwork = findViewById(R.id.bottomnavHealthandwork);
+        bottomnavaffirmation = findViewById(R.id.bottomnavaffirmation);
+
+
+    }
+
+    private void Personalitynumber() {
         SharedPreferences getShared = getSharedPreferences(Constant.USER, MODE_PRIVATE);
         firstname = getShared.getString(Constant.FIRSTNAME, "firstname");
         lastname = getShared.getString(Constant.LASTNAME, "lastname");
@@ -140,34 +171,88 @@ public class MainActivity extends AppCompatActivity {
         editor.putString(Constant.NAMENUMBER, String.valueOf(finaldigit));
         editor.commit();
         editor.apply();
-
-        //bottomnavigation text
-        BottomBtnoneText = findViewById(R.id.BottomBtnoneText);
-        BottomBtntwoText = findViewById(R.id.BottomBtntwoText);
-        BottomBtntreeText = findViewById(R.id.BottomBtnthreeText);
-        BottomBtnfourText = findViewById(R.id.BottomBtnfourText);
-
-        //bottomnavigation text end
-
-
-        main = findViewById(R.id.liner_main);
-
-        //navigation
-        drawerLayout = findViewById(R.id.layoutParent);
-        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout,
-                R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawerLayout.addDrawerListener(actionBarDrawerToggle);
-        actionBarDrawerToggle.syncState();
-        navigationView = findViewById(R.id.navigationDrawer);
-        navigationView.setCheckedItem(R.id.navProfiles);
-        //navigation end
-        bottomnavmyprfile = findViewById(R.id.bottomnavmyprfile);
-        bottomnavCompatibility = findViewById(R.id.bottomnavCompatibility);
-        bottomnavHealthandwork = findViewById(R.id.bottomnavHealthandwork);
-        bottomnavaffirmation = findViewById(R.id.bottomnavaffirmation);
-
-
     }
+
+    private void Expressionnumber() {
+        SharedPreferences getShared = getSharedPreferences(Constant.USER, MODE_PRIVATE);
+        firstname = getShared.getString(Constant.FIRSTNAME, "firstname");
+        lastname = getShared.getString(Constant.LASTNAME, "lastname");
+        String nameexpressin = firstname + lastname;
+        String[] result = nameexpressin.replaceAll("\\s", "").toUpperCase().split("");
+
+
+        for (int x = 1; x < result.length; x++) {
+
+            expressiontempint = expressiontempint + getPersonalityNumber(result[x]);
+////            hello.append(String.valueOf(getPersonalityNumber(result[x])));
+//            hello.append((String.valueOf(tempint) + "\n\n"));
+        }
+
+
+        if (expressiontempint > 9) {
+            if (expressiontempint == 11 || expressiontempint == 22) {
+                expressionfinaldigit = expressiontempint;
+            } else {
+                expressiondigitvalue = expressiontempint;
+
+                List<Integer> digits = new ArrayList<Integer>();
+
+                collectDigits(expressiondigitvalue, digits);
+                for (int x = 0; x < digits.size(); x++) {
+
+                    expressiontemp = expressiontemp + digits.get(x);
+////            hello.append(String.valueOf(getPersonalityNumber(result[x])));
+//            hello.append((String.valueOf(tempint) + "\n\n"));
+                }
+                if (expressiontemp > 9) {
+                    if (expressiontemp == 11 || expressiontemp == 22) {
+                        expressionfinaldigit = expressiontemp;
+                    } else {
+                        List<Integer> digittwo = new ArrayList<Integer>();
+
+                        collectDigits(expressiontemp, digittwo);
+                        for (int x = 0; x < digittwo.size(); x++) {
+
+                            expressiontemptwo = expressiontemptwo + digittwo.get(x);
+////
+                        }
+                        if (expressiontemptwo > 9) {
+                            if (expressiontemptwo==11 || expressiontemptwo==22){
+                                expressionfinaldigit = expressiontemptwo;
+                            }
+                            else{
+                                List<Integer> digitthree = new ArrayList<Integer>();
+
+                                collectDigits(expressiontemptwo, digitthree);
+                                for (int x = 0; x < digitthree.size(); x++) {
+
+                                    expressiontemptree = expressiontemptree + digitthree.get(x);
+////
+                                }
+                                expressionfinaldigit = expressiontemptree;
+                            }
+                        } else {
+                            expressionfinaldigit = expressiontemptwo;
+                        }
+
+                    }
+                } else {
+                    expressionfinaldigit = expressiontemp;
+                }
+
+            }
+
+        } else {
+            expressionfinaldigit = expressiontempint;
+
+        }
+        SharedPreferences sp = getSharedPreferences(Constant.USER, MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putString(Constant.EXPRESSIONNUMBER, String.valueOf(expressionfinaldigit));
+        editor.commit();
+        editor.apply();
+    }
+
 
     private void allbottomtexthide() {
         BottomBtnoneText.setVisibility(View.VISIBLE);
@@ -175,6 +260,7 @@ public class MainActivity extends AppCompatActivity {
         BottomBtntreeText.setVisibility(View.INVISIBLE);
         BottomBtnfourText.setVisibility(View.INVISIBLE);
     }
+
 
     private void onclick() {
         //bottom bottomnavigation

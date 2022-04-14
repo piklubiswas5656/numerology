@@ -69,7 +69,7 @@ public class Affirmation_Fragment extends Fragment {
         Capricorn = view.findViewById(R.id.Capricorn);
         Aquarius = view.findViewById(R.id.Aquarius);
         Pisces = view.findViewById(R.id.Pisces);
-        Affirmation = view.findViewById(R.id.Affirmation);
+        Affirmation = view.findViewById(R.id.Scratchliner);
         onclick();
         return view;
     }

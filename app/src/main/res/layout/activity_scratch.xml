@@ -8,8 +8,8 @@
     tools:context=".Scratch">
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
         android:layout_marginTop="84dp"
         android:gravity="center"
         android:src="@drawable/flower_icon"
@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:overlay_height="300dp"
-        app:overlay_image="@drawable/birthday_cake"
+        app:overlay_image="@drawable/scratch"
         app:overlay_width="300dp"
         app:tile_mode="CLAMP" />
 </androidx.constraintlayout.widget.ConstraintLayout>

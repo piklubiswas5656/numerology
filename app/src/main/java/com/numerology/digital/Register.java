@@ -20,7 +20,7 @@ import android.widget.Toast;
 import java.util.Calendar;
 
 public class Register extends AppCompatActivity {
-//    private DatePickerDialog datePickerDialog;
+    //    private DatePickerDialog datePickerDialog;
 //    private Button datepickerButton;
 //    private TextView dateofbirthText;
     private Button save;
@@ -63,17 +63,42 @@ public class Register extends AppCompatActivity {
 
                     SharedPreferences sp = getSharedPreferences(Constant.USER, MODE_PRIVATE);
                     SharedPreferences.Editor editor = sp.edit();
-                    editor.putString(Constant.FIRSTNAME, firstnameEditText.getText().toString());
-                    editor.putString(Constant.LASTNAME, lastnameEditText.getText().toString());
-                    editor.putString(Constant.DAY, dd);
-                    editor.putString(Constant.MONTH, mm);
-                    editor.putString(Constant.YEAR, yyyy);
-                    editor.putString(Constant.GENDER, gender);
-                    editor.commit();
-                    editor.apply();
-                    startActivity(new Intent(Register.this, MainActivity.class));
-                    Toast.makeText(getApplicationContext(), firstnameEditText.getText().toString() + " Welcome to Numerology", Toast.LENGTH_LONG).show();
-                    finish();
+
+
+//                    if (sp.contains(Constant.FIRSTNAME)) {
+//                        editor.remove(Constant.FIRSTNAME).commit();
+//                        editor.remove(Constant.LASTNAME).commit();
+//                        editor.remove(Constant.DAY).commit();
+//                        editor.remove(Constant.MONTH).commit();
+//                        editor.remove(Constant.YEAR).commit();
+//                        editor.remove(Constant.GENDER).commit();
+//                        editor.apply();
+//                        SharedPreferences spp = getSharedPreferences(Constant.USER, MODE_PRIVATE);
+//                        SharedPreferences.Editor editor2 = spp.edit();
+//                        editor2.putString(Constant.FIRSTNAME, firstnameEditText.getText().toString());
+//                        editor2.putString(Constant.LASTNAME, lastnameEditText.getText().toString());
+//                        editor2.putString(Constant.DAY, dd);
+//                        editor2.putString(Constant.MONTH, mm);
+//                        editor2.putString(Constant.YEAR, yyyy);
+//                        editor2.putString(Constant.GENDER, gender);
+//                        editor2.commit();
+//                        editor2.apply();
+//                        startActivity(new Intent(Register.this, MainActivity.class));
+//                        Toast.makeText(getApplicationContext(), firstnameEditText.getText().toString() + " Welcome to Numerology", Toast.LENGTH_LONG).show();
+//                        finish();
+//                    } else {
+                        editor.putString(Constant.FIRSTNAME, firstnameEditText.getText().toString());
+                        editor.putString(Constant.LASTNAME, lastnameEditText.getText().toString());
+                        editor.putString(Constant.DAY, dd);
+                        editor.putString(Constant.MONTH, mm);
+                        editor.putString(Constant.YEAR, yyyy);
+                        editor.putString(Constant.GENDER, gender);
+                        editor.commit();
+                        editor.apply();
+                        startActivity(new Intent(Register.this, MainActivity.class));
+                        Toast.makeText(getApplicationContext(), firstnameEditText.getText().toString() + " Welcome to Numerology", Toast.LENGTH_LONG).show();
+                        finish();
+//                    }
 
 
                 }
@@ -141,4 +166,6 @@ public class Register extends AppCompatActivity {
     }
 
 */
+
+
 }

@@ -29,9 +29,9 @@ import com.numerology.digital.R;
 public class MyProfile_Fragment extends Fragment {
 
     //    private Button newUser;
-    private TextView Personality_numberText;
-    private String Personality_number;
-    private CardView Expression, Personality, Soul, LifePath,Attitude,Birth;
+    private TextView Personality_numberText, Expression_numberText;
+    private String Personality_number, Expression_number;
+    private CardView Expression, Personality, Soul, LifePath, Attitude, Birth;
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -81,19 +81,20 @@ public class MyProfile_Fragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_my_profile_, container, false);
 //        newUser = view.findViewById(R.id.newUser);
         Personality_numberText = view.findViewById(R.id.Personality_number);
+        Expression_numberText = view.findViewById(R.id.Expression_number);
         Expression = view.findViewById(R.id.number1Expression);
         Personality = view.findViewById(R.id.number2Personality);
         Soul = view.findViewById(R.id.number3Soul);
         LifePath = view.findViewById(R.id.number4LifePath);
-        Attitude=view.findViewById(R.id.number5Attitude);
-        Birth=view.findViewById(R.id.number6Birth);
-
+        Attitude = view.findViewById(R.id.number5Attitude);
+        Birth = view.findViewById(R.id.number6Birth);
 
 
         SharedPreferences getShared = getContext().getSharedPreferences(Constant.USER, MODE_PRIVATE);
         Personality_number = getShared.getString(Constant.NAMENUMBER, "namenumber");
+        Expression_number = getShared.getString(Constant.EXPRESSIONNUMBER, "expressionnumber");
         Personality_numberText.setText(String.valueOf(Personality_number));
-
+        Expression_numberText.setText(String.valueOf(Personality_number));
 
         onclick();
         return view;

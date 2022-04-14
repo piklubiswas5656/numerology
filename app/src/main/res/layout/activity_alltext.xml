@@ -35,194 +35,196 @@
             android:textSize="22sp" />
 
     </LinearLayout>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-    <!--cardone-->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/readingcardview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:padding="50dp"
-        app:cardBackgroundColor="#40ffffff"
-        app:cardCornerRadius="10dp">
 
-        <RelativeLayout
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
-                android:id="@+id/ReadingLiner1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--cardone-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/readingcardview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:padding="10dp">
+                android:layout_margin="15dp"
+                android:padding="50dp"
+                app:cardBackgroundColor="#40ffffff"
+                app:cardCornerRadius="10dp">
 
-                <TextView
-                    android:id="@+id/ReadingText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="100dp"
-                    android:text="Expression Reading"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="22sp" />
-
-                <ImageView
-                    android:id="@+id/ReadingImage"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_gravity="center_vertical"
-                    android:backgroundTint="@color/white"
-                    android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
-            </LinearLayout>
+                    android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/ReadingLiner2"
+                    <LinearLayout
+                        android:id="@+id/ReadingLiner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/ReadingText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="100dp"
+                            android:text="Expression Reading"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="22sp" />
+
+                        <ImageView
+                            android:id="@+id/ReadingImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:backgroundTint="@color/white"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ReadingLiner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ReadingLiner1"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/ReadingfullText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Record not found"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <!--cardtwo-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/WhatisCardview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/ReadingLiner1"
-                android:orientation="vertical"
-                android:visibility="gone">
+                android:layout_margin="15dp"
+                android:padding="50dp"
+                app:cardBackgroundColor="#40ffffff"
+                app:cardCornerRadius="10dp">
 
-                <TextView
-                    android:id="@+id/ReadingfullText"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="description is here "
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:layout_height="wrap_content">
 
-            </LinearLayout>
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
-    <!--cardtwo-->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/WhatisCardview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:padding="50dp"
-        app:cardBackgroundColor="#40ffffff"
-        app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:id="@+id/WhatIsLiner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/WhatisText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:text="What is Expression Number"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="22sp" />
 
-            <LinearLayout
-                android:id="@+id/WhatIsLiner1"
+                        <ImageView
+                            android:id="@+id/WhatIsImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:backgroundTint="@color/white"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/WhatIsLiner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/WhatIsLiner1"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/WhatIsfullText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="description is here "
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <!--cardthree-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/howToCardView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:padding="10dp">
+                android:layout_margin="15dp"
+                android:padding="50dp"
+                app:cardBackgroundColor="#40ffffff"
+                app:cardCornerRadius="10dp">
 
-                <TextView
-                    android:id="@+id/WhatisText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="50dp"
-                    android:text="What is Expression Number"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="22sp" />
-
-                <ImageView
-                    android:id="@+id/WhatIsImage"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:backgroundTint="@color/white"
-                    android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
-            </LinearLayout>
+                    android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/WhatIsLiner2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/WhatIsLiner1"
-                android:orientation="vertical"
-                android:visibility="gone">
+                    <LinearLayout
+                        android:id="@+id/HowToLiner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp">
 
-                <TextView
-                    android:id="@+id/WhatIsfullText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="description is here "
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                        <TextView
+                            android:id="@+id/HowToText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="100dp"
+                            android:text="How To Calculate"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="22sp" />
 
-            </LinearLayout>
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
-    <!--cardthree-->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/howToCardView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:padding="50dp"
-        app:cardBackgroundColor="#40ffffff"
-        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:id="@+id/HowToImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:backgroundTint="@color/white"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+                    </LinearLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/HowToLiner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/HowToLiner1"
+                        android:orientation="vertical"
+                        android:visibility="gone">
 
-            <LinearLayout
-                android:id="@+id/HowToLiner1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:padding="10dp">
+                        <TextView
+                            android:id="@+id/HowTofullText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="description is here "
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
 
-                <TextView
-                    android:id="@+id/HowToText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="100dp"
-                    android:text="How To Calculate"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="22sp" />
-
-                <ImageView
-                    android:id="@+id/HowToImage"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:backgroundTint="@color/white"
-                    android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/HowToLiner2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/HowToLiner1"
-                android:orientation="vertical"
-                android:visibility="gone">
-
-                <TextView
-                    android:id="@+id/HowTofullText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="description is here "
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
-
-            </LinearLayout>
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
-    </LinearLayout>
-</ScrollView>
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

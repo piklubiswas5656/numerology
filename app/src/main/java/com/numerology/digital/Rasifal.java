@@ -14,6 +14,8 @@ public class Rasifal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rasifal);
         rasifalText = findViewById(R.id.rasifaltext);
+
+
         rasi = getIntent().getStringExtra(Constant.RASIFALTEXT);
         if (rasi.equals("Aries")) {
             rasifalText.setText(R.string.Aries);

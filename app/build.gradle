@@ -1,5 +1,7 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 }
 
 android {
@@ -35,7 +37,9 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 //    ScratchView
     implementation 'com.github.AnupKumarPanwar:ScratchView:1.9'
+    implementation 'com.google.firebase:firebase-analytics:20.1.2'
 
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

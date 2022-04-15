@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "418790129300",
+    "project_id": "numerology-a4461",
+    "storage_bucket": "numerology-a4461.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418790129300:android:55b43f33cf754258be7e81",
+        "android_client_info": {
+          "package_name": "com.numerology.digital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418790129300-3h9igthru8ikhs408defbefi946tqugp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKXhKaru7syqVcqMFa_G8t7JSGxnbZHTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418790129300-3h9igthru8ikhs408defbefi946tqugp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     private String firstname, lastname;
     private int tempint, expressiontempint;
     private int temp, temptwo, temptree, expressiontemp, expressiontemptwo, expressiontemptree;
-
+    private String lifeday, lifemonth, lifeyear;
     String name;
     private int digitvalue, expressiondigitvalue;
     private int finaldigit, expressionfinaldigit;
@@ -72,11 +72,15 @@ public class MainActivity extends AppCompatActivity {
         } catch (NullPointerException e) {
             e.printStackTrace();
         }
+
     }
 
     private void init() {
         Personalitynumber();
         Expressionnumber();
+        Lifepath();
+        attitude();
+        Birthnumber();
         //bottomnavigation text
         BottomBtnoneText = findViewById(R.id.BottomBtnoneText);
         BottomBtntwoText = findViewById(R.id.BottomBtntwoText);
@@ -113,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         String[] result = name.replaceAll("\\s", "").toUpperCase().split("");
 
 
-        for (int x = 1; x < result.length; x++) {
+        for (int x = 0; x < result.length; x++) {
 
             tempint = tempint + getPersonalityNumber(result[x]);
 ////            hello.append(String.valueOf(getPersonalityNumber(result[x])));
@@ -217,10 +221,9 @@ public class MainActivity extends AppCompatActivity {
 ////
                         }
                         if (expressiontemptwo > 9) {
-                            if (expressiontemptwo==11 || expressiontemptwo==22){
+                            if (expressiontemptwo == 11 || expressiontemptwo == 22) {
                                 expressionfinaldigit = expressiontemptwo;
-                            }
-                            else{
+                            } else {
                                 List<Integer> digitthree = new ArrayList<Integer>();
 
                                 collectDigits(expressiontemptwo, digitthree);
@@ -249,6 +252,263 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sp = getSharedPreferences(Constant.USER, MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         editor.putString(Constant.EXPRESSIONNUMBER, String.valueOf(expressionfinaldigit));
+        editor.commit();
+        editor.apply();
+    }
+
+    private void Lifepath() {
+        SharedPreferences getShared = getSharedPreferences(Constant.USER, MODE_PRIVATE);
+        lifeday = getShared.getString(Constant.DAY, "day");
+        lifemonth = getShared.getString(Constant.MONTH, "lastname");
+        lifeyear = getShared.getString(Constant.YEAR, "lastname");
+        int yearlifetemp = 0, yearlifetemptwo = 0, yearlifetempthree = 0, yearlifefinal = 0;
+
+        int montlifetemp = 0, monthlifetemptwo = 0, monthlifefinal;
+        int daylifetemp = 0, daylifetemptwo = 0, daylifefinal = 0;
+        int totaltemp = 0, totaltemptwo = 0, totaltempthree = 0, totaltempfour = 0, totalfinal = 0;
+        //year
+        int year = Integer.parseInt(lifeyear);
+
+        List<Integer> digits = new ArrayList<Integer>();
+
+        collectDigits(year, digits);
+        for (int x = 0; x < digits.size(); x++) {
+
+            yearlifetemp = yearlifetemp + digits.get(x);
+        }
+        if (yearlifetemp > 9) {
+            List<Integer> digitstwo = new ArrayList<Integer>();
+
+            collectDigits(yearlifetemp, digitstwo);
+            for (int x = 0; x < digitstwo.size(); x++) {
+
+                yearlifetemptwo = yearlifetemptwo + digitstwo.get(x);
+            }
+            if (yearlifetemptwo > 9) {
+                List<Integer> digitstree = new ArrayList<Integer>();
+
+                collectDigits(yearlifetemptwo, digitstree);
+                for (int x = 0; x < digitstree.size(); x++) {
+
+                    yearlifetempthree = yearlifetempthree + digitstree.get(x);
+                }
+                yearlifefinal = yearlifetempthree;
+            } else {
+                yearlifefinal = yearlifetemptwo;
+            }
+        } else {
+            yearlifefinal = yearlifetemp;
+        }
+        //year end
+        //month
+        int month = Integer.parseInt(lifemonth);
+        List<Integer> digitsmonth = new ArrayList<Integer>();
+        collectDigits(month, digitsmonth);
+        for (int x = 0; x < digitsmonth.size(); x++) {
+
+            montlifetemp = montlifetemp + digitsmonth.get(x);
+        }
+        if (montlifetemp > 9) {
+            List<Integer> digitsmonthtwo = new ArrayList<Integer>();
+            collectDigits(montlifetemp, digitsmonthtwo);
+            for (int x = 0; x < digitsmonthtwo.size(); x++) {
+
+                monthlifetemptwo = monthlifetemptwo + digitsmonthtwo.get(x);
+            }
+            monthlifefinal = monthlifetemptwo;
+        } else {
+            monthlifefinal = montlifetemp;
+        }
+        //month end
+
+        //day
+        int day = Integer.parseInt(lifeday);
+        List<Integer> digitsday = new ArrayList<Integer>();
+        collectDigits(day, digitsday);
+        for (int x = 0; x < digitsday.size(); x++) {
+
+            daylifetemp = daylifetemp + digitsday.get(x);
+        }
+        if (daylifetemp > 9) {
+            List<Integer> digitsdaytwo = new ArrayList<Integer>();
+            collectDigits(daylifetemp, digitsdaytwo);
+            for (int x = 0; x < digitsdaytwo.size(); x++) {
+
+                daylifetemptwo = daylifetemptwo + digitsdaytwo.get(x);
+            }
+            daylifefinal = daylifetemptwo;
+        } else {
+            daylifefinal = daylifetemp;
+        }
+        //day end
+
+        int finaltotal = yearlifefinal + monthlifefinal + daylifefinal;
+
+
+        //final
+
+        List<Integer> digitsfinal = new ArrayList<Integer>();
+        collectDigits(finaltotal, digitsfinal);
+        for (int x = 0; x < digitsfinal.size(); x++) {
+
+            totaltemp = totaltemp + digitsfinal.get(x);
+        }
+        if (totaltemp > 9) {
+            List<Integer> digitsfinaltwo = new ArrayList<Integer>();
+            collectDigits(totaltemp, digitsfinaltwo);
+            for (int x = 0; x < digitsfinaltwo.size(); x++) {
+
+                totaltemptwo = totaltemptwo + digitsfinaltwo.get(x);
+            }
+            if (totaltemptwo > 9) {
+                List<Integer> digitsfinalthree = new ArrayList<Integer>();
+                collectDigits(totaltemptwo, digitsfinalthree);
+                for (int x = 0; x < digitsfinalthree.size(); x++) {
+
+                    totaltempthree = totaltempthree + digitsfinalthree.get(x);
+                }
+                totalfinal = totaltempthree;
+            } else {
+                totalfinal = totaltemptwo;
+            }
+        } else {
+            totalfinal = totaltemp;
+        }
+
+
+        //final end
+
+
+        SharedPreferences sp = getSharedPreferences(Constant.USER, MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putString(Constant.LIFEPATH, String.valueOf(totalfinal));
+        editor.commit();
+        editor.apply();
+
+    }
+
+    private void attitude() {
+
+        SharedPreferences getShared = getSharedPreferences(Constant.USER, MODE_PRIVATE);
+        String dayy = getShared.getString(Constant.DAY, "day");
+        String monthh = getShared.getString(Constant.MONTH, "lastname");
+        int montlifetemp = 0, monthlifetemptwo = 0, monthlifefinal;
+        int daylifetemp = 0, daylifetemptwo = 0, daylifefinal = 0;
+        //month
+        int month = Integer.parseInt(monthh);
+        List<Integer> digitsmonth = new ArrayList<Integer>();
+        collectDigits(month, digitsmonth);
+        for (int x = 0; x < digitsmonth.size(); x++) {
+
+            montlifetemp = montlifetemp + digitsmonth.get(x);
+        }
+        if (montlifetemp > 9) {
+            List<Integer> digitsmonthtwo = new ArrayList<Integer>();
+            collectDigits(montlifetemp, digitsmonthtwo);
+            for (int x = 0; x < digitsmonthtwo.size(); x++) {
+
+                monthlifetemptwo = monthlifetemptwo + digitsmonthtwo.get(x);
+            }
+            monthlifefinal = monthlifetemptwo;
+        } else {
+            monthlifefinal = montlifetemp;
+        }
+        //month end
+
+        //day
+        int day = Integer.parseInt(dayy);
+        List<Integer> digitsday = new ArrayList<Integer>();
+        collectDigits(day, digitsday);
+        for (int x = 0; x < digitsday.size(); x++) {
+
+            daylifetemp = daylifetemp + digitsday.get(x);
+        }
+        if (daylifetemp > 9) {
+            List<Integer> digitsdaytwo = new ArrayList<Integer>();
+            collectDigits(daylifetemp, digitsdaytwo);
+            for (int x = 0; x < digitsdaytwo.size(); x++) {
+
+                daylifetemptwo = daylifetemptwo + digitsdaytwo.get(x);
+            }
+            daylifefinal = daylifetemptwo;
+        } else {
+            daylifefinal = daylifetemp;
+        }
+        //day end
+
+        int totaltemp = 0, totaltemptwo = 0, totaltempthree = 0, totaltempfour = 0, totalfinal = 0;
+        int finaltotal = monthlifefinal + daylifefinal;
+
+        //final
+
+        List<Integer> digitsfinal = new ArrayList<Integer>();
+        collectDigits(finaltotal, digitsfinal);
+        for (int x = 0; x < digitsfinal.size(); x++) {
+
+            totaltemp = totaltemp + digitsfinal.get(x);
+        }
+        if (totaltemp > 9) {
+            List<Integer> digitsfinaltwo = new ArrayList<Integer>();
+            collectDigits(totaltemp, digitsfinaltwo);
+            for (int x = 0; x < digitsfinaltwo.size(); x++) {
+
+                totaltemptwo = totaltemptwo + digitsfinaltwo.get(x);
+            }
+            if (totaltemptwo > 9) {
+                List<Integer> digitsfinalthree = new ArrayList<Integer>();
+                collectDigits(totaltemptwo, digitsfinalthree);
+                for (int x = 0; x < digitsfinalthree.size(); x++) {
+
+                    totaltempthree = totaltempthree + digitsfinalthree.get(x);
+                }
+                totalfinal = totaltempthree;
+            } else {
+                totalfinal = totaltemptwo;
+            }
+        } else {
+            totalfinal = totaltemp;
+        }
+
+
+        //final end
+
+
+        SharedPreferences sp = getSharedPreferences(Constant.USER, MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putString(Constant.ATTITUDE, String.valueOf(totalfinal));
+        editor.commit();
+        editor.apply();
+    }
+
+    private void Birthnumber() {
+        SharedPreferences getShared = getSharedPreferences(Constant.USER, MODE_PRIVATE);
+        String dayy = getShared.getString(Constant.DAY, "day");
+        int daylifetemp = 0, daylifetemptwo = 0, daylifefinal = 0;
+
+
+        //day
+        int day = Integer.parseInt(dayy);
+        List<Integer> digitsday = new ArrayList<Integer>();
+        collectDigits(day, digitsday);
+        for (int x = 0; x < digitsday.size(); x++) {
+
+            daylifetemp = daylifetemp + digitsday.get(x);
+        }
+        if (daylifetemp > 9) {
+            List<Integer> digitsdaytwo = new ArrayList<Integer>();
+            collectDigits(daylifetemp, digitsdaytwo);
+            for (int x = 0; x < digitsdaytwo.size(); x++) {
+
+                daylifetemptwo = daylifetemptwo + digitsdaytwo.get(x);
+            }
+            daylifefinal = daylifetemptwo;
+        } else {
+            daylifefinal = daylifetemp;
+        }
+        //day end
+        SharedPreferences sp = getSharedPreferences(Constant.USER, MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putString(Constant.BIRTH, String.valueOf(daylifefinal));
         editor.commit();
         editor.apply();
     }

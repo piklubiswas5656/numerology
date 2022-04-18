@@ -29,7 +29,7 @@ import com.numerology.digital.R;
 public class MyProfile_Fragment extends Fragment {
 
     //    private Button newUser;
-    private TextView Personality_numberText, Expression_numberText;
+    private TextView Personality_numberText, Expression_numberText, Lifepath_number, Attitude_number, Birth_number;
     private String Personality_number, Expression_number;
     private CardView Expression, Personality, Soul, LifePath, Attitude, Birth;
 
@@ -86,6 +86,9 @@ public class MyProfile_Fragment extends Fragment {
         Personality = view.findViewById(R.id.number2Personality);
         Soul = view.findViewById(R.id.number3Soul);
         LifePath = view.findViewById(R.id.number4LifePath);
+        Lifepath_number = view.findViewById(R.id.Lifepath_number);
+        Attitude_number = view.findViewById(R.id.Attitude_number);
+        Birth_number = view.findViewById(R.id.Birth_number);
         Attitude = view.findViewById(R.id.number5Attitude);
         Birth = view.findViewById(R.id.number6Birth);
 
@@ -96,6 +99,9 @@ public class MyProfile_Fragment extends Fragment {
         Personality_numberText.setText(String.valueOf(Personality_number));
         Expression_numberText.setText(String.valueOf(Personality_number));
 
+        Lifepath_number.setText(String.valueOf(getShared.getString(Constant.LIFEPATH, "lifepath")));
+        Attitude_number.setText(String.valueOf(getShared.getString(Constant.ATTITUDE, "attitude")));
+        Birth_number.setText(String.valueOf(getShared.getString(Constant.BIRTH, "Birth")));
         onclick();
         return view;
     }

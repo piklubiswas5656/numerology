@@ -267,7 +267,7 @@
                             android:layout_marginRight="20dp"
                             android:layout_toRightOf="@id/viewLifepath"
                             android:gravity="right"
-                            android:text="4"
+                            android:text="2"
                             android:textColor="@color/white"
                             android:textSize="40dp" />
 

@@ -7,12 +7,15 @@
     android:background="@color/black"
     tools:context=".Scratch">
 
-    <ImageView
+    <TextView
         android:layout_width="290dp"
         android:layout_height="290dp"
+        android:id="@+id/textScratchh"
         android:layout_marginTop="84dp"
         android:gravity="center"
-        android:src="@drawable/flower_icon"
+        android:text="“All our dreams can come true, if we have the courage to pursue them.” "
+        android:textColor="@color/white"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
